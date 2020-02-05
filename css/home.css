@@ -59,6 +59,8 @@ nav button {
 /* SLider Styles Start */
 .slide-container{
   margin-top: 10px;
+  width: 80%;
+  margin-left: 10%;
 }
 .carousel {
   box-shadow: 5px 5px 30px grey;
