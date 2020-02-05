@@ -166,30 +166,37 @@
   /* Services styles start */
 
   /* Producst styles */
-  .products{
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-between;
-  }
-  .productImgs{
-      width: 25%;
-  }
-  .product-img{
-      height: 500px;
-  }
-  .products-item{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-  }
-  .products-item .btn{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 100%;
-  }
-  .products-item a{
-    display: block;
+.product-cards{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.card{
+    width: 20rem;
+    height:650px;
+}
+
+.card h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.card img{
     width: 100%;
+    margin-bottom: 15px;  
+}
+.card img:hover{
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+.card p{
+    text-align: justify;
+    font-weight: 500;
+}
+.card div{
+    margin-bottom: 10px;
+}
+.card .btn{
+    background: rgb(141, 93, 3) ;
 }
