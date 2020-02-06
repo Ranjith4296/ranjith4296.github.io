@@ -1,5 +1,8 @@
 .seminar{
-  height:500px;
+  height: 50vh;
   width: 100%;
-  background-color: aqua;
+  display: block;
+  background-color: black;
+  color: white;
+
 }
