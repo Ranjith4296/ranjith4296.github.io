@@ -32,12 +32,13 @@
   align-items: center;
   padding: 10px;
   height: 40vh;
+  font-size: large;
 }
 .products-content:hover.products-content{
   font-weight: bold;
   transition-duration: .4s;
   transform: scale(0.8);
-  font-size: large;
+  font-size: larger;
 }
 .products-content p{
   text-align: justify;
@@ -47,8 +48,13 @@
 .consultancy-container{
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.consultancy-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .consultancy-items{
   padding: 10px 10px 10px 10px;
