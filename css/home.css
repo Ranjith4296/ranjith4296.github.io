@@ -92,9 +92,10 @@ nav button {
   }
 }
 
-/* Conetent image starts */
+/* Conetent starts */
 .content {
   margin-top: 10px;
+  padding-top: 60px;
 }
 .contentimg {
   padding-top: 60px;
