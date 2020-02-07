@@ -86,6 +86,11 @@ nav button {
   .carousel img{
     height: 200px;
   }
+  .slide-container{
+    margin-top: 10px;
+    width: 95%;
+   
+  }
 }
 
 /* Conetent image starts */
