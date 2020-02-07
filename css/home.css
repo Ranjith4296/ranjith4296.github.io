@@ -96,6 +96,14 @@ nav button {
 .main-content {
   margin-top: 10px;
 }
+.main-content img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
 .contentimg {
   padding-top: 60px;
   display: block;
