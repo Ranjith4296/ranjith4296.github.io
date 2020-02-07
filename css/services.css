@@ -16,15 +16,16 @@
 }
 .products-card img{
   box-shadow: 3px 3px 5px gray;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   height: 40vh;
 }
-.products-card:hover img{
-  transform: scale(1.5);
-  transition-duration: 0.5s;
+.products-heading{
+  width: 100%;
+  align-items: center;
+  text-align: center;
 }
 .products-content{
   width: 100%;
@@ -34,15 +35,10 @@
   height: 40vh;
   font-size: large;
 }
-.products-content:hover.products-content{
-  font-weight: bold;
-  transition-duration: .4s;
-  transform: scale(1.1);
-  font-size: larger;
-}
+
 .products-content p{
   text-align: justify;
-  padding: 1% 10%;
+  padding: 1% 1%;
 }
 /* consultancy styles starts */
 .consultancy-container{
@@ -63,9 +59,14 @@
   width: 100%;
 }
 @media only screen and(min-width:758px) {
+  .products-card:hover img{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+  }
   .products-content:hover.products-content{
     font-weight: bold;
     transition-duration: .4s;
+    transform: scale(1.1);
     font-size: larger;
   }
   .products-card:hover img{
