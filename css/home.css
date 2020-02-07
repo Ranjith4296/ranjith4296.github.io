@@ -65,7 +65,11 @@ nav button {
   margin-left: 2%;
   margin-right: 2%;
   width: 95%;
+  transition-duration: 1.5s;
  
+}
+.carousel-inner .carousel-item, .active{
+  transition: transform 2s ease-in-out,-webkit-transform 2s ease-in-out;
 }
 .carousel {
   box-shadow: 5px 5px 30px grey;
