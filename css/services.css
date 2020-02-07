@@ -44,3 +44,9 @@
   padding: 1% 10%;
 }
 /* consultancy styles starts */
+.consultancy-items{
+  padding: 10px 10px 10px 10px;
+}
+.consultancy-img{
+  width: 100%;
+}
