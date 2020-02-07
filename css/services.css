@@ -37,7 +37,7 @@
 .products-content:hover.products-content{
   font-weight: bold;
   transition-duration: .4s;
-  transform: scale(0.8);
+  transform: scale(1.1);
   font-size: larger;
 }
 .products-content p{
