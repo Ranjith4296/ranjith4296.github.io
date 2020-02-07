@@ -79,7 +79,7 @@ nav button {
 @media only screen and (max-width: 758px) {
   .carousel,
   .carousel img{
-    height: 100px;
+    height: 150px;
   }
   .slide-container{
     margin-top: 10px;
