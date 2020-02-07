@@ -106,11 +106,15 @@ nav button {
 }
 .sec-content p{
   padding-top: 100px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 90%;
+  text-align: justify;
 }
-
+@media only screen and (max-width:758px){
+  .sec-content p{
+    padding: 10px;
+    width: 100%; 
+  }
+}
 /* Client Images */
 .client-container{
   margin-top: 50px;
