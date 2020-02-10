@@ -27,6 +27,8 @@ body{
 }
 .nav-item {
   margin: 0px 5px 0px 5px;
+  list-style-type: none;
+  line-height: 40px;
 }
 .nav-item i {
   margin-right: 5px;
@@ -37,18 +39,30 @@ body{
   font-family: cursive;
   font-size: small;
   font-family: 'Bree Serif', serif;
+  text-decoration: none;
+}
+.dropdown-menu{
+  background-color: rgba(60, 59, 61, 0.5);
+  color: white;
 }
 nav button {
-  color: black;
-  box-shadow: 0 0 3px rgb(200, 50, 205), 0 0 3px rgb(200, 50, 205),
-    0 0 20px rgb(200, 50, 205);
+  color: rgb(152, 35, 219);
+}
+.navbar-toggler{
+  border: 2px solid rgb(152, 35, 219);
+  border-radius: 5px;
 }
 .nav-item:hover {
-  box-shadow: 0 0 3px rgb(187, 50, 205), 0 0 3px rgb(187, 50, 205),
-    0 0 20px rgb(200, 50, 205);
-  transform: scale(.9);
+  /* box-shadow: 0 0 3px rgb(187, 50, 205), 0 0 3px rgb(187, 50, 205),
+    0 0 20px rgb(200, 50, 205); */
+  /* transform: scale(.9); */
+  background-color:rgba(60, 59, 61, 0.5);
+  transition-duration: .7s;
+  border-radius: 5px;
+}
+.nav-item:hover a{
   transition-duration: .5s;
-  color: black;
+  color: white;
 }
 @media only screen and (max-width:758px) {
   .nav-item a {

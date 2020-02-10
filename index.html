@@ -33,8 +33,18 @@
                 <ul class="nav navbar-nav">
                     <li class=" active nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>IGAIT</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i>SERVICES/PRODUCTS</a>
-                      
+                    <li class="nav-item">
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown">
+                          <a class="nav-link" href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i>SERVICES/PRODUCTS</a>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li class="nav-item"><a href="">ddBM</a></li>
+                          <li class="nav-item"><a href="">FAMS</a></li>
+                          <li class="nav-item"><a href="">UHS</a></li>
+                          <li class="nav-item"><a href="">VAS</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>TESTIMONIALS</a></li>
                     <li class="nav-item"><a class="nav-link" href="seminars.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>SEMINARS/WORKSHOPS</a></li>
@@ -220,6 +230,8 @@
        AOS.init({
          duration:2000,
        });
+      //  navbar animation
+      
     </script>
   </body>
 </html>
