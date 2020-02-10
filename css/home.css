@@ -87,11 +87,7 @@ nav button {
 .carousel-inner .carousel-item, .active{
   transition: transform 2s ease-in-out,-webkit-transform 2s ease-in-out;
 }
-.carousel {
-  box-shadow: 5px 5px 30px grey;
-}
-
-.carousel,
+.carousel-item,
 .carousel img {
   border-radius: 10px;
   height: 350px;
