@@ -34,15 +34,14 @@ body{
   margin-right: 5px;
 }
 .nav-item a {
-  color: rgb(67, 17, 114);
+  color:rgb(114, 11, 218);
   font-weight: 500;
   font-family: cursive;
   font-size: small;
   font-family: 'Bree Serif', serif;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .dropdown-menu{
-  background-color: rgba(60, 59, 61, 0.5);
   color: white;
 }
 nav button {
@@ -53,27 +52,42 @@ nav button {
   border-radius: 5px;
 }
 .nav-item:hover {
-  /* box-shadow: 0 0 3px rgb(187, 50, 205), 0 0 3px rgb(187, 50, 205),
-    0 0 20px rgb(200, 50, 205); */
-  /* transform: scale(.9); */
-  background-color:rgba(60, 59, 61, 0.5);
+ background-color: rgb(114, 11, 218);
   transition-duration: .7s;
   border-radius: 5px;
 }
 .nav-item:hover a{
   transition-duration: .5s;
-  color: white;
+  color:white;
+}
+.ddbm-dropdown{
+  display: none;
+  position: absolute;
+  left: 95%;
+  top: 2%;
+  width: 100%;
+  margin-top: 10px; 
+}
+.nav-item .service-dropdown{
+  display: none;
+  width:100% ;
+  position: relative;
+  z-index: 1;
+}
+.nav-item:hover .service-dropdown{
+  display: block;
+}
+.nav-item:hover>.ddbm-dropdown{
+  display: block;
 }
 @media only screen and (max-width:758px) {
   .nav-item a {
-    color: rgb(67, 17, 114);
     font-weight: 500;
     text-align: center;
   }
 }
 @media only screen and (min-width:1500px) {
   .nav-item a {
-    color: rgb(67, 17, 114);
     font-weight: 400;
     text-align: center;
     font-size: large;
@@ -81,7 +95,6 @@ nav button {
 }
 @media only screen and (min-width:1000px) {
   .nav-item a {
-    color: rgb(67, 17, 114);
     font-weight: 300;
     text-align: center;
     font-size: medium;
