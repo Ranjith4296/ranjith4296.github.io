@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
    <!-- External Bootstrap and Jquery CDN -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
     <!-- External CDN Ends -->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- fonts icon start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts icon end -->
@@ -20,69 +19,60 @@
     <link rel="stylesheet" href="../css/nav.css" />
 </head>
 <body>
-  <div id="freeSlide_sp1_id106" class="fs-sp1">
-    <div id="fs-sp1-106" style="overflow: hidden; position: relative; height: 270px; width: 940px; display: block; margin: 0px; padding: 0px;">
-        <div class="fs-sp1-content" style="display: none; margin: 0px; padding: 0px; opacity: 1; position: absolute; float: none; width: 940px; height: 270px; z-index: 0; left: 0px; top: 0px;">
-          <div class="fs-sp1-inner">
-              <a href=" "><img src="../images/Home/insanity-banner-Recovered.jpg" alt="" class="fs-sp1-image"></a>
-          </div>
+  
+  <div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand img-responsive" href="#"><img src="../images/logo.png" alt="Logo" /></a>
         </div>
     
-        <div class="fs-sp1-content" style="display: block; margin: 0px; padding: 0px; opacity: 1; position: absolute; float: none; width: 940px; height: 270px; z-index: 1; left: 0px; top: 0px;">
-          <div class="fs-sp1-inner">
-            <a href=" "><img src="../images/Home/dramatic-baneer.jpg" alt="" class="fs-sp1-image"></a>
-          </div>
-        </div>
-      
-        <div class="fs-sp1-content" style="display: none; margin: 0px; padding: 0px; opacity: 1; position: absolute; float: none; width: 940px; height: 270px; z-index: 0; left: 0px; top: 0px;">
-          <div class="fs-sp1-inner">
-            <a href=" "><img src="../images/Home/PROVEN-SOLUTION-BANNER.jpg" alt="" class="fs-sp1-image"></a>
-          </div>
-        </div>
-        
-    
-        <div class="fs-sp1-content" style="display: none; margin: 0px; padding: 0px; opacity: 1; position: absolute; float: none; width: 940px; height: 270px; z-index: 0; left: 0px; top: 0px;">
-          <div class="fs-sp1-inner">
-            <a href=" "><img src="images/top4.jpg" alt="" class="fs-sp1-image"></a>
-          </div>
-        </div>
-        
-        <div class="fs-sp1-content" style="display: none; margin: 0px; padding: 0px; opacity: 1; position: absolute; float: none; width: 940px; height: 270px; z-index: 0; left: 0px; top: 0px;">
-          <div class="fs-sp1-inner">
-            <a href=" "><img src="images/top5.jpg" alt="" class="fs-sp1-image"></a>
-          </div>
-        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a href="#">HOME</a></li>
+            <li class="nav-item"><a href="#">IGAIT</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES/PRPODUCTS <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a href="">ddBM</a>
+                  <ul class="ddbm-dropdown">
+                    <li class="nav-item"><a href="">ddBM QM</a></li>
+                    <li class="nav-item"><a href="">ddBM WIP</a></li>
+                    <li class="nav-item"><a href="">ddBM MIS</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item"><a href="">FAMS</a></li>
+                  <li class="nav-item"><a href="">UHS</a></li>
+                  <li class="nav-item"><a href="">VAS</a></li>
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     </div>
-    <div id="fs-sp1-handlers106" class="fs-sp1-controllers">
-			<div id="fs-sp1-prev106" class="fs-sp1-prev"></div>
-			<span class="">0</span><span class="">1</span><span class="active">2</span><span class="">3</span><span class="">4</span>	
-			<div id="fs-sp1-next106" class="fs-sp1-next"></div>
-		</div>
 
-  <script type="text/javascript">
-    window.addEvent('domready',function(){
-          var walkers106 = document.getElements('#fs-sp1-handlers106 span');
-          var fssp1_id106 = new freeSlide_sp1($('fs-sp1-106'), {
-        size: {width: 940, height: 270},
-        fxOptions: {duration:  1000, transition: Fx.Transitions.Sine.easeOut},
-              onWalk: function(i, j){
-          $$(walkers106[i]).addClass('active');
-          $$(walkers106[j]).removeClass('active');
-        },
-        onInitialized: function () {
-          walkers106[0].addClass('active');
-        },	
-          
-        transition: 'cover-horizontal-fade'			
-      });
-          fssp1_id106.addItemWalkers(walkers106);
-      fssp1_id106.addPlayerControls('previous', [$('fs-sp1-prev106')]);
-      fssp1_id106.addPlayerControls('next', [$('fs-sp1-next106')]);
-          
-          fssp1_id106.play(5000);
-        
-    });
-  </script>
-</div>
+    <!--  -->
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

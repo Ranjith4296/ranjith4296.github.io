@@ -1,0 +1,20 @@
+body {
+    margin: 30px 0px;
+}
+.nav-item:hover{
+    background-color: rgb(8, 205, 240);
+    color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(8, 205, 240);
+    color: rgb(255, 255, 255);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.navbar-brand img{
+    height: 4rem;
+    width: 9rem;
+  }
