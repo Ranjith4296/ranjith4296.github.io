@@ -1,20 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
 body {
     margin: 30px 0px;
 }
+.nav-item a {
+    color: white !important;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: medium;
+    font-family: 'Bree Serif', serif;
+    text-decoration: none !important;
+  }
+.nav-item i {
+margin-right: 5px;
+}
 .nav-item:hover{
-    background-color: rgb(8, 205, 240);
+    background-color: #002060;
     color: rgb(255, 255, 255);
 }
+
+.navbar{
+    background-color:#C55A11 ;
+    border: none;
+}
+
 .navbar-default .navbar-nav > li.dropdown:hover > a, 
 .navbar-default .navbar-nav > li.dropdown:hover > a:hover,
 .navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(8, 205, 240);
+    background-color:#002060;
     color: rgb(255, 255, 255);
 }
-li.dropdown:hover > .dropdown-menu {
+
+
+.dropdown:hover > .dropdown-menu {
     display: block;
 }
+
+.dropdown-menu{
+    background-color:#C55A11;
+    width: 100%;
+}
+.dropdown-menu li a{
+    line-height: 40px;
+}
+.dropdown-menu li a:hover{
+    background-color: #002060 !important;
+    color: rgb(255, 255, 255);
+}
+.ddbm-dropdown{
+    left: 99%;
+    top: 0%;
+}
 .navbar-brand img{
-    height: 4rem;
-    width: 9rem;
+    position: relative;
+    width: 12rem;
   }
