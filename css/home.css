@@ -105,8 +105,7 @@ body{
 }
 .client-src-img {
   margin-top: 75px;
-  margin-left: 50px;
-  
+  margin-left: 50px; 
 }
 /* footer area */
 .footer {
@@ -153,3 +152,4 @@ body{
 .footerLink li:hover a{
   color: blue;
 }
+
