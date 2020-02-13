@@ -18,9 +18,9 @@ body{
     rgba(255, 255, 255, 1) 100%
   );
 }
-.navbar-brand{
-    height: 100%;
-     width: 9rem;
+.logo {
+    height: 5rem;
+    width: 12rem;
 }
 .nav {
   width: 100%;
