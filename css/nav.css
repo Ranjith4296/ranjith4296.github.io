@@ -1,56 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
-body {
-    margin: 30px 0px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: 'Acme', sans-serif;
+}
+
+.nav-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(207, 240, 253, 1) 19%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.navbar-brand{
+    height: 100%;
+     width: 9rem;
+}
+.nav {
+  width: 100%;
+}
+.nav-item {
+  margin: 0px 5px 0px 5px;
+  list-style-type: none;
+  line-height: 40px;
+}
+.nav-item i {
+  margin-right: 5px;
 }
 .nav-item a {
-    color: white !important;
-    font-weight: 500;
-    font-family: cursive;
-    font-size: medium;
-    font-family: 'Bree Serif', serif;
-    text-decoration: none !important;
-  }
-.nav-item i {
-margin-right: 5px;
+  color:rgb(114, 11, 218);
+  font-weight: 500;
+  font-family: cursive;
+  font-size: small;
+  font-family: 'Bree Serif', serif;
+  text-decoration: none !important;
 }
-.nav-item:hover{
-    background-color: #002060;
-    color: rgb(255, 255, 255);
-}
-
-.navbar{
-    background-color:#C55A11 ;
-    border: none;
-}
-
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color:#002060;
-    color: rgb(255, 255, 255);
-}
-
-
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
-
 .dropdown-menu{
-    background-color:#C55A11;
-    width: 100%;
+  color: white;
 }
-.dropdown-menu li a{
-    line-height: 40px;
+nav button {
+  color: rgb(152, 35, 219);
 }
-.dropdown-menu li a:hover{
-    background-color: #002060 !important;
-    color: rgb(255, 255, 255);
+.navbar-toggler{
+  border: 2px solid rgb(152, 35, 219);
+  border-radius: 5px;
+}
+.nav-item:hover {
+ background-color: rgb(114, 11, 218) !important;
+  transition-duration: .7s;
+  border-radius: 5px;
+}
+.nav-item:hover a{
+  transition-duration: .5s;
+  color:white !important;
 }
 .ddbm-dropdown{
-    left: 99%;
-    top: 0%;
+  display: none;
+  position: absolute;
+  left: 95%;
+  top: 2%;
+  width: 100%;
+  margin-top: 10px; 
 }
-.navbar-brand img{
-    position: relative;
-    width: 12rem;
+.nav-item .service-dropdown{
+  display: none;
+  width:100% ;
+  position: relative;
+  z-index: 1;
+}
+.nav-item:hover .service-dropdown{
+  display: block;
+}
+.nav-item:hover>.ddbm-dropdown{
+  display: block;
+}
+@media only screen and (max-width:758px) {
+  .nav-item a {
+    font-weight: 500;
+    text-align: center;
   }
+}
+@media only screen and (min-width:1500px) {
+  .nav-item a {
+    font-weight: 400;
+    text-align: center;
+    font-size: large;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .nav-item a {
+    font-weight: 300;
+    text-align: center;
+    font-size: medium;
+    
+  }
+}
