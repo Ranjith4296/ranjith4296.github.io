@@ -84,7 +84,6 @@ body{
   .dropdownMenu{
       position: absolute;
       width:100%;
-      display: block;
   }
 }
 /* Modal Styles */
