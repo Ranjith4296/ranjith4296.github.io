@@ -44,6 +44,7 @@ body{
   width:100%;
   background-color: rgb(226, 223, 223);
   display: none;
+  z-index: 1;
 }
 .dropdownMenu > li:hover,.ddbm-menu{
   background-color: darkgray;
