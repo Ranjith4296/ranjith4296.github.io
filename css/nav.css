@@ -81,9 +81,9 @@ body{
   .nav-item>a{
       font-size: large !important;
   }
-  .dropdownMenu{
-      position: absolute;
-      width:100%;
+  .ddbm-menu{
+    position: relative;
+    width: 100%;
   }
 }
 /* Modal Styles */
