@@ -12,82 +12,94 @@ body{
 }
 
 /* Nav Bar  */
-.nav-container {
-  background: linear-gradient(
-    to bottom,
-    rgba(207, 240, 253, 1) 19%,
-    rgba(246, 246, 246, 1) 75%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
 #logo{
-    height:100%;
-    width: 150px;
-    float: left;
+  height:100%;
+  width: 150px;
+  float: left;
 }
 .nav-item{
-    list-style-type: none;
-    display: block;
+  list-style-type: none;
+  display: block;
 }
 .nav-item>a{
-    font-size:large;
-    white-space: nowrap;
-    color: rgb(134, 54, 8) !important;
+  font-size:large;
+  white-space: nowrap;
+  color: rgb(134, 54, 8) !important;
 }
 .nav-item i{
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .nav-item:hover{
-    background-color: rgb(226, 223, 223);
+  background-color: rgb(226, 223, 223);
 }
 .nav-item:visited{
-    background-color: rgb(226, 223, 223);
+  background-color: rgb(226, 223, 223);
 }
 .dropdownMenu>li>a{
-    text-decoration: none;
-    color: rgb(53, 50, 50);  
+  text-decoration: none;
+  color: rgb(53, 50, 50);  
 }
 .dropdownMenu{
-    position: absolute;
-    width:100%;
-    background-color: rgb(226, 223, 223);
-    display: none;
+  position: absolute;
+  width:100%;
+  background-color: rgb(226, 223, 223);
+  display: none;
 }
 .dropdownMenu > li:hover,.ddbm-menu{
-    background-color: darkgray;
+  background-color: darkgray;
 }
 .ddbm-menu{
-    position: absolute;
-    width: 100%;
-    left: 100%;
-    top: 0%;
-    display: none;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0%;
+  display: none;
 }
 .ddbm-menu li:hover{
-    background-color: rgb(226, 223, 223);
+  background-color: rgb(226, 223, 223);
 }
+/* @media only screen and (max-width:1400px) {
+ .nav-item>a{
+      font-size: small;
+  }
+}
+@media only screen and (max-width:1220px) {
+  .nav-item>a{
+       font-size: 10px;
+   }
+}
+@media only screen and (max-width:1100px) {
+  .nav-item>a{
+       font-size: 10px;
+   }
+} */
 @media only screen and (max-width:990px) {
-    #logo{
-        width: 150px;
-    }
-    .nav-item>a{
-        font-size: large !important;
-    }
+  #logo{
+      width: 150px;
+  }
+  .nav-item>a{
+      font-size: large !important;
+  }
+  .dropdownMenu{
+      position: absolute;
+      width:100%;
+      display: block;
+  }
 }
 /* Modal Styles */
 
 .myForm input{
-    margin-bottom: 10px;
-    height: 50px;
+  margin-bottom: 10px;
+  height: 50px;
 }
 .myForm input:hover{
-    box-shadow: 3px 3px 20px grey;
+  box-shadow: 3px 3px 20px grey;
 }
 .myForm .btn{
-    font-size: 20px;
+  font-size: 20px;
 }
 .btn {
-    white-space: nowrap;
-    float: none;
-    display: inline-block;
+  white-space: nowrap;
+  float: none;
+  display: inline-block;
 }
