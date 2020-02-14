@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-   <!-- External Bootstrap and Jquery CDN -->
-   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-   <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    
-    <!-- External CDN Ends -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- animated library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- External CDN Ends -->
     <!-- fonts icon start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts icon end -->
@@ -18,26 +16,110 @@
     <link rel="stylesheet" href="../css/nav.css" />
 </head>
 <body>
-    <div class="container-fluid">
-         <nav class="navbar navbar-expand-md mr-auto">
-            <img class="logo" src="../images/logo.png" alt="Logo"/>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            <div class="collapse navbar-collapse mr-auto" id="collapsibleNavbar">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class=" active nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="igait.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>IGAIT</a></li>
-                    <li class="dropdown nav-item"> <a href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i>SERVICES/PRPODUCTS <b class="caret"></b></a>   
-                    <li class="dropdown nav-item"><a href="testimonials.html"><i class="fa fa-user" aria-hidden="true"></i>TESTIMONIALS <b class="caret"></b></a></li>
-                    <li class="nav-item"><a class="nav-link" href="seminars.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>SEMINARS/WORKSHOPS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html"><i class="fa fa-server" aria-hidden="true"></i>RESOURCES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>BLOG</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>TECHNOLOGY</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>CONTACT US</a></li>
-                </ul> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img id="logo" class="img-responsive" src="../images/logo.png" alt="Logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class=" active nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>ABOUT US</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i>SERVICES<i class="fa fa-angle-down"></i></a>
+                <ul class="dropdownMenu">
+                    <li class="nav-item ddbm"><a href="" class="nav-link" aria-hidden="true">ddBM</a>
+                        <ul class="ddbm-menu">
+                            <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">ddBM</a></li>
+                            <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">ddBM MIS</a></li>
+                            <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">ddBM</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">UHS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">FAMS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link" aria-hidden="true">VAS</a></li>
+                </ul>
+            </li>            
+            <li class="nav-item"><a class="nav-link" href="testimonials.html"><i class="fa fa-user" aria-hidden="true"></i>TESTIMONIALS</a></li>
+            <li class="nav-item"><a class="nav-link" href="seminar.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>SEMINARS/WORKSHOPS</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="resources.html"><i class="fa fa-server" aria-hidden="true"></i>RESOURCES</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>BLOG</a></li> -->
+            <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>TECHNOLOGY</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>CONTACT US</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#myModal" type="button">For free Demo</button>
+          </form>
+        </div>
+      </nav>
+<!-- popup window -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Request a Demo</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-        </nav>   
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form class="myForm" id="myForm" method="post" id="ContactEnquiryForm">
+                    <div class="col-sm-12">
+                      <div class="inputItems"><input name="name" value="" type="text" class="form-control input-sm name" placeholder="Name *" required=""></div>
+                      <div class="inputItems"><input name="mobile" value="" type="text" class="form-control input-sm company" placeholder="Company *"required=""></div>
+                      <div class="inputItems"><input name="mobile" value="" type="text" class="form-control input-sm mobile_no" placeholder="Contact Number *" maxlength="10" required=""></div>
+                      <div class="inputItems"><input name="email_id" value="" type="email" class="form-control input-sm" placeholder="Work Email"></div> 
+                      <div class="inputItems"><input name="mobile" value="" type="text" class="form-control input-sm jobtitle" placeholder="Job Title"required=""></div>
+                      <div class="inputItems"><input name="message" value="" type="text" class="form-control input-sm message" placeholder="Message "></div>
+                      <input class="btn btn-primary btn-block" onclick="submit()" type="submit" value="Submit" name="submit">
+                    </div>        
+                  </form>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+        </div>
+        </div>
     </div>
+  
+<!-- popup window closed -->
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+ <!-- text animation library -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init({
+     duration:2000,
+   });
+
+   function clearInp() {
+    document.getElementsByTagName("input").value = "";
+    }
+    function submit() {
+    document.getElementById("myForm").reset();
+    }
+    $(function () {
+        $(".dropdown").hover(function() {
+            $(".dropdownMenu").slideToggle();
+        })
+    })
+    $(function () {
+        $(".ddbm").hover(function() {
+            $(".ddbm-menu").fadeToggle();
+        })
+    })
+  
+</script> 
 </body>
 </html>

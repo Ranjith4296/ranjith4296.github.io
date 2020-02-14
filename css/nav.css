@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
 * {
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body{
   font-family: 'Acme', sans-serif;
 }
 
+/* Nav Bar  */
 .nav-container {
   background: linear-gradient(
     to bottom,
@@ -18,86 +20,74 @@ body{
     rgba(255, 255, 255, 1) 100%
   );
 }
-.logo {
-    height: 5rem;
-    width: 12rem;
+#logo{
+    height:100%;
+    width: 150px;
+    float: left;
 }
-.nav {
-  width: 100%;
+.nav-item{
+    list-style-type: none;
+    display: block;
 }
-.nav-item {
-  margin: 0px 5px 0px 5px;
-  list-style-type: none;
-  line-height: 40px;
+.nav-item>a{
+    font-size:large;
+    white-space: nowrap;
+    color: rgb(134, 54, 8) !important;
 }
-.nav-item i {
-  margin-right: 5px;
+.nav-item i{
+    margin-right: 5px;
 }
-.nav-item a {
-  color:rgb(114, 11, 218);
-  font-weight: 500;
-  font-family: cursive;
-  font-size: small;
-  font-family: 'Bree Serif', serif;
-  text-decoration: none !important;
+.nav-item:hover{
+    background-color: rgb(226, 223, 223);
 }
-.dropdown-menu{
-  color: white;
+.nav-item:visited{
+    background-color: rgb(226, 223, 223);
 }
-nav button {
-  color: rgb(152, 35, 219);
+.dropdownMenu>li>a{
+    text-decoration: none;
+    color: rgb(53, 50, 50);  
 }
-.navbar-toggler{
-  border: 2px solid rgb(152, 35, 219);
-  border-radius: 5px;
+.dropdownMenu{
+    position: absolute;
+    width:100%;
+    background-color: rgb(226, 223, 223);
+    display: none;
 }
-.nav-item:hover {
- background-color: rgb(114, 11, 218) !important;
-  transition-duration: .7s;
-  border-radius: 5px;
+.dropdownMenu > li:hover,.ddbm-menu{
+    background-color: darkgray;
 }
-.nav-item:hover a{
-  transition-duration: .5s;
-  color:white !important;
+.ddbm-menu{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0%;
+    display: none;
 }
-.ddbm-dropdown{
-  display: none;
-  position: absolute;
-  left: 95%;
-  top: 2%;
-  width: 100%;
-  margin-top: 10px; 
+.ddbm-menu li:hover{
+    background-color: rgb(226, 223, 223);
 }
-.nav-item .service-dropdown{
-  display: none;
-  width:100% ;
-  position: relative;
-  z-index: 1;
+@media only screen and (max-width:990px) {
+    #logo{
+        width: 150px;
+    }
+    .nav-item>a{
+        font-size: large !important;
+    }
 }
-.nav-item:hover .service-dropdown{
-  display: block;
+/* Modal Styles */
+
+.myForm input{
+    margin-bottom: 10px;
+    height: 50px;
 }
-.nav-item:hover>.ddbm-dropdown{
-  display: block;
+.myForm input:hover{
+    box-shadow: 3px 3px 20px grey;
 }
-@media only screen and (max-width:758px) {
-  .nav-item a {
-    font-weight: 500;
-    text-align: center;
-  }
+.myForm .btn{
+    font-size: 20px;
 }
-@media only screen and (min-width:1500px) {
-  .nav-item a {
-    font-weight: 400;
-    text-align: center;
-    font-size: large;
-  }
-}
-@media only screen and (min-width:1000px) {
-  .nav-item a {
-    font-weight: 300;
-    text-align: center;
-    font-size: medium;
-    
-  }
+.btn {
+    white-space: nowrap;
+    float: none;
+    display: inline-block;
 }
