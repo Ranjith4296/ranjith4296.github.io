@@ -12,6 +12,11 @@ body{
 }
 
 /* Nav Bar  */
+.navbar{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 #logo{
   height:100%;
   width: 150px;
