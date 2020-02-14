@@ -42,12 +42,12 @@ body{
 .dropdownMenu{
   position: absolute;
   width:100%;
-  background-color: rgb(226, 223, 223);
+  background-color: rgba(226, 223, 223,0.7);
   display: none;
   z-index: 1;
 }
 .dropdownMenu > li:hover,.ddbm-menu{
-  background-color: darkgray;
+  background-color: rgb(169, 169, 169,0.7);
 }
 .ddbm-menu{
   position: absolute;
@@ -57,7 +57,7 @@ body{
   display: none;
 }
 .ddbm-menu li:hover{
-  background-color: rgb(226, 223, 223);
+  background-color: rgb(226, 223, 223,0.7);
 }
 /* @media only screen and (max-width:1400px) {
  .nav-item>a{
