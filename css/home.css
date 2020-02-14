@@ -42,6 +42,7 @@ body{
 /* Conetent starts */
 .main-content {
   margin-top: 10px;
+  font-size: medium;
 }
 .main-content img{
   display: block;
@@ -63,6 +64,7 @@ body{
   padding-top: 100px;
   width: 90%;
   text-align: justify;
+  font-size: medium;
 }
 @media only screen and (max-width:758px){
   .sec-content p{
