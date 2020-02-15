@@ -17,6 +17,9 @@ body{
   margin-left: 5%;
   margin-right: 5%;
 }
+.collapse{
+  transition-duration: 1s;
+}
 #logo{
   height:100%;
   width: 150px;
