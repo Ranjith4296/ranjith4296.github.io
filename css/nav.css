@@ -92,14 +92,12 @@ body{
   }
   .dropdownMenu{
     position: relative;
-    display: none;
   }
   .ddbm-menu{
     position: relative;
     width: 100%;
     left: 0%;
     top: 0%;
-    display: none;
   }
 }
 /* Modal Styles */
