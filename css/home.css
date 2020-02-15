@@ -9,6 +9,10 @@ body{
   overflow-x: hidden !important;
   font-family: 'Acme', sans-serif;
 }
+.nav-container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /* SLider Styles Start */
 .slide-container{
