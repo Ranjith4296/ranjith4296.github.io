@@ -17,8 +17,9 @@ body{
   margin-left: 5%;
   margin-right: 5%;
 }
-.collapse{
-  transition-duration: 1s;
+.navbar-nav{
+  transition: ease-out;
+  transition-duration: 3s;
 }
 #logo{
   height:100%;
