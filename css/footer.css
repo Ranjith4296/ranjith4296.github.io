@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  font-family: 'Acme', sans-serif;
+}
+
+/* footer area */
+.footer {
+  background: linear-gradient(
+    to top,
+    rgba(207, 240, 253, 1) 0%,
+    rgba(207, 240, 253, 1) 19%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 50px;
+}
+.footerItems i{
+  margin-right: 10px;
+}
+.socialmedia {
+  height: 30px;
+  width: 30px;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+
+.getintouch .inputItems{
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 1px 1px 5px grey;
+}
+.footerLink li {
+  list-style-type: square;
+  text-align: justify;
+  margin-left: 20px;
+  color: brown;
+  cursor: pointer;
+}
+.footerLink li a{
+  color: brown;
+  text-decoration: none;
+}
+.footerLink li:hover a{
+  color: blue;
+}
+
