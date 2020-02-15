@@ -13,9 +13,6 @@ body{
 /* SLider Styles Start */
 .slide-container{
   margin-top: 10px;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 95%;
   transition-duration: 1.5s;
  
 }
@@ -25,7 +22,7 @@ body{
 .carousel-item,
 .carousel img {
   border-radius: 10px;
-  height: 350px;
+  height: 300px;
 }
 @media only screen and (max-width: 758px) {
   .carousel,
@@ -40,6 +37,10 @@ body{
 }
 
 /* Conetent starts */
+.main-content p{
+  width: 70%;
+  margin: 10px auto;
+}
 .main-content {
   margin-top: 10px;
   font-size: medium;
@@ -62,7 +63,7 @@ body{
 }
 .sec-content p{
   padding-top: 100px;
-  width: 90%;
+  width: 100%;
   text-align: justify;
   font-size: medium;
 }

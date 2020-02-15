@@ -15,6 +15,7 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
      <!-- animated library -->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <!-- External CDN Ends -->
      <!-- fonts icon start-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,17 +24,17 @@
      <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
-        <!-- Nav Section Start -->
-    <section class="nav-container container-fluid">
+   <!-- Nav Section Start -->
+   <section class="nav-container container-fluid">
         
-    </section>
+  </section>
     <script>
       $(function(){
-        $(".nav-container").load("../nav.html");
+        $(".nav-container").load("../html/nav.html");
       });
             
     </script>
-  <!-- Nav section Ends -->
+   <!-- Nav section Ends -->
   
   <!-- Image Carousel starts -->
     <div class="container slide-container">
@@ -71,11 +72,11 @@
   
   <!--Main Content Starts -->
 
-    <div class="container title-container">
-      <div class="main-content" data-aos="fade-up"  >
+    <div class="container-fluid title-container">
+      <div class="main-content" data-aos="fade-up" >
         <img class="img-responsive" src="../images/Home/welcome.png" alt="">
-        <h2 style="text-align: center; color: rgb(156, 6, 156)">WELCOME TO IGAIT</h2><br>
-        <p style="text-align: justify;" >
+        <h2 style="text-align: center; color: rgb(156, 6, 156)" >WELCOME TO IGAIT</h2><br>
+        <p style="text-align: justify;">
             <b style="color: brown;">“INDUSTRIAL GROWTH ANALYTIK INFO TECHNIQS" IGAIT</b>, is a consultancy
         company founded with the aim ofimparting productivity improvement
         skills and developing solutions for the apparel industry. IGAIT is
@@ -89,20 +90,22 @@
         experts with rich experience in implementation of lean, gemba, 5s,
         kaizen, visual solutions etc, apart from Information technology.
         </p>
+      </div>
     </div>
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-12 img-responsive" data-aos="slide-right">
-                <img class="contentimg img-responsive" src="../images/Home/Untitled-1.jpg" alt="" />
-            </div>
-            <div class="col-md-8 col-lg-8 col-sm-12 sec-content" data-aos="slide-left">
-              <p><b style="color: brown;">TOC (Theory of Constraints)</b> A concept advocated by Eliyahu Goldratt, which is the theoretical base of supply chain management.
-                TOC is a model that explains the impact on profitability from decision-making by a supply chain in terms of time. 
-                TOC is also a method of managing bottlenecks.
-                The Theory of Constraints is a methodology for identifying the most important limiting factor (i.e. constraint) that stands in the way of achieving a goal and then
-                systematically improving that constraint until it is no longer the limiting factor. 
-                In manufacturing, the constraint is often referred to as a bottleneck.</p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12 img-responsive" data-aos="fade-right">
+            <img class="contentimg img-responsive" src="../images/Home/Untitled-1.jpg" alt="" />
         </div>
+        <div class="col-md-8 col-lg-8 col-sm-12 sec-content" data-aos="fade-left">
+          <p><b style="color: brown;">TOC (Theory of Constraints)</b> A concept advocated by Eliyahu Goldratt, which is the theoretical base of supply chain management.
+            TOC is a model that explains the impact on profitability from decision-making by a supply chain in terms of time. 
+            TOC is also a method of managing bottlenecks.
+            The Theory of Constraints is a methodology for identifying the most important limiting factor (i.e. constraint) that stands in the way of achieving a goal and then
+            systematically improving that constraint until it is no longer the limiting factor. 
+            In manufacturing, the constraint is often referred to as a bottleneck.</p>
+        </div>
+      </div>
     </div>
     <!-- Main Content Ends -->
     <div class="container client-container">
@@ -202,7 +205,6 @@
         </div> 
       </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
        AOS.init({
          duration:2000,
