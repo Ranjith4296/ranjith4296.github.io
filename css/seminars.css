@@ -23,6 +23,7 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 20px grey;
   background-color: rgba(0,0,0,0.5);
+  margin-bottom: 40px;
 }
 .banner-content{
   text-align: center;
@@ -40,6 +41,15 @@ body {
 .cards-container{
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.card-head{
+  width: 10rem;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
 }
 .card-body{
   text-align: center;
@@ -64,4 +74,34 @@ padding: 20px 10px 20px 10px;
 .introduction p{
   text-align: justify;  
   font-size: medium;
+}
+.session-container{
+  margin-top: 20px;
+  height: 400px;
+  border: thin solid grey;
+}
+.session-image img{
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  box-shadow: 3px 3px 10px grey;
+  border-radius: 5px;
+}
+.session-content{
+  padding: 20px 10px 20px 10px;
+}
+.session-content ul{
+  margin-left: 40px;
+}
+.details-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  color: brown;
+  background-color: rgb(104, 197, 182);
+  padding: 20px 10px 20px 10px;
+}
+.details-container h5{
+  font-weight: 500;
 }
