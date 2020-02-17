@@ -37,19 +37,31 @@ body {
   -1px 1px 0 white,
   1px 1px 0 white;
 }
-.course-topics{
-  height: 250px;
-  margin-top: 20px;
+.cards-container{
+  display: flex;
+  justify-content: space-between;
 }
-.course-items{
-  background-color: cornflowerblue;
-  height: 250px;
-}
-.course-items h4{
+.card-body{
   text-align: center;
   align-items: center;
-  vertical-align: middle;
-  padding: 50px 10px 50px 10px;
 }
 
-/* seminar banner Ends */
+.venue-container{
+background-color: khaki;
+margin-top: 100px;
+padding: 20px 10px 20px 10px;
+}
+.venue-container h2{
+  text-align: center;
+  align-items: center;
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.introduction{
+  margin-top: 20px;  
+}
+.introduction p{
+  text-align: justify;  
+  font-size: medium;
+}
