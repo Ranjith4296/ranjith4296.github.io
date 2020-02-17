@@ -15,10 +15,5 @@ body {
   padding: 0;
 }
 /* seminar banner starts */
-.banner-container{
-  background: url(../images/Seminars/banner.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
 
-}
 /* seminar banner Ends */
