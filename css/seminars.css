@@ -1,16 +1,16 @@
-.seminar{
-  height: 50vh;
-  width: 100%;
-  display: block;
-  color: white;
+@import url("https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.seminar img{
-  text-align: center;
-  vertical-align: middle;
-  align-items: center;
-  height: 300px;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+html {
+  overflow-x: hidden;
+}
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
 }

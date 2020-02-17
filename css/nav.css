@@ -1,99 +1,127 @@
-
-@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
-  scroll-behavior: smooth;
+html {
   overflow-x: hidden;
-  font-family: 'Acme', sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Nav Bar  */
-.navbar{
-  background-color: #fff !important;
+.navbar {
+  white-space: nowrap;
 }
-.navbar-nav{
+.container-fluid {
+  background: linear-gradient(
+    to bottom,
+    rgba(207, 240, 253, 1) 0%,
+    rgba(207, 240, 253, 1) 19%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 0px !important;
+}
+.navbar-nav {
   transition: ease-out;
   transition-duration: 3s;
 }
-#logo{
-  height:100%;
+#logo {
+  height: 100%;
   width: 150px;
   float: left;
+  border-radius: 5px;
 }
-.nav-item{
+.nav-item {
   list-style-type: none;
   display: block;
 }
-.nav-item>a{
-  font-size:large;
+.nav-item > a {
+  font-size: large;
   white-space: nowrap;
-  color: rgb(134, 54, 8) !important;
+  color: rgb(6, 50, 133) !important;
 }
-.nav-item i{
+.nav-item i {
   margin-right: 5px;
 }
-.nav-item:hover{
-  background-color: rgb(226, 223, 223);
+.nav-item:hover {
+  background-color: rgba(6, 50, 133, 0.7);
+  border-radius: 5px;
+  transition-duration: 0.5s;
 }
-.nav-item:visited{
-  background-color: rgb(226, 223, 223);
+.nav-item:hover a {
+  color: white !important;
+  transition-duration: 0.5s;
 }
-.dropdownMenu>li>a{
+.nav-item:visited {
+  background-color: rgba(6, 50, 133, 0.7);
+  border-radius: 5px;
+}
+.dropdownMenu > li > a {
   text-decoration: none;
-  color: rgb(53, 50, 50);  
+  color: rgb(53, 50, 50);
 }
 
-.navbar-toggle{
+.navbar-toggle {
   border: none;
   background-color: white;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  float: left;
 }
-.navbar-toggle span{
+.navbar-toggle span {
   color: black !important;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.dropdownMenu{
+.dropdownMenu {
   position: absolute;
-  width:100%;
-  background-color: rgba(226, 223, 223,0.7);
+  width: 100%;
+  background-color: rgba(6, 50, 133, 0.7);
+  border-radius: 5px;
   display: none;
   z-index: 1;
 }
-.ddbm-menu{
+.ddbm-menu {
   position: absolute;
   width: 100%;
   left: 100%;
   top: 0%;
   display: none;
 }
-/* @media only screen and (min-width:991px) {
-  
-  .dropdownMenu > li:hover,.ddbm-menu{
-    background-color: rgb(169, 169, 169,0.7);
-  }
-  
-  .ddbm-menu li:hover{
-    background-color: rgb(226, 223, 223,0.7);
-  }
-} */
+.dropdownMenu > li:hover,
+.ddbm-menu {
+  background-color: rgba(6, 50, 133, 0.7);
+  border-radius: 5px;
+}
 
-@media only screen and (max-width:990px) {
-  #logo{
-      width: 150px;
+.ddbm-menu li:hover {
+  background-color: rgba(6, 50, 133, 0.7);
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.dropdown,
+.ddbm {
+  cursor: pointer;
+}
+@media only screen and (max-width: 990px) {
+  #logo {
+    width: 130px;
   }
-  .nav-item>a{
-      font-size: large !important;
+  .nav-item > a {
+    font-size: large !important;
   }
-  .dropdownMenu{
+  .dropdownMenu {
     position: relative;
   }
-  .ddbm-menu{
+  .ddbm-menu {
     position: relative;
     width: 100%;
     left: 0%;
@@ -102,18 +130,25 @@ body{
 }
 /* Modal Styles */
 
-.myForm input{
+.myForm input {
   margin-bottom: 10px;
   height: 50px;
 }
-.myForm input:hover{
+.myForm input:hover {
   box-shadow: 3px 3px 20px grey;
 }
-.myForm .btn{
+.myForm .btn {
   font-size: 20px;
 }
 .btn {
   white-space: nowrap;
   float: none;
   display: inline-block;
+}
+.btn-success:hover {
+  background: linear-gradient(to left, yellow, yellowgreen) !important;
+  color: green !important;
+  transition-duration: 0.3s;
+  border: none;
+  box-shadow: 3px 3px 20px grey !important;
 }

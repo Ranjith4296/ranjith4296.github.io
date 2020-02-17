@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
+html {
+  overflow-x: hidden;
+}
+body {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* footer area */
@@ -26,7 +31,10 @@ body{
   padding-right: 2rem;
   padding-bottom: 50px;
 }
-.footerItems i{
+h3 {
+  color: rgb(6, 50, 133);
+}
+.footerItems i {
   margin-right: 10px;
 }
 .socialmedia {
@@ -36,7 +44,7 @@ body{
   margin-top: 10px;
 }
 
-.getintouch .inputItems{
+.getintouch .inputItems {
   margin-bottom: 10px;
   width: 100%;
   box-shadow: 1px 1px 5px grey;
@@ -48,11 +56,18 @@ body{
   color: brown;
   cursor: pointer;
 }
-.footerLink li a{
+.footerLink li a {
   color: brown;
   text-decoration: none;
 }
-.footerLink li:hover a{
+.footerLink li a:hover {
   color: blue;
 }
-
+@media only screen and (max-width: 990px) {
+  .footerItems {
+    margin-bottom: 20px;
+  }
+  h3 {
+    text-align: center;
+  }
+}
