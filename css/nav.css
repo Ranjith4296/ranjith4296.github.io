@@ -43,11 +43,7 @@ body {
   list-style-type: none;
   display: block;
 }
-.nav-item > a {
-  font-size: large;
-  white-space: nowrap;
-  color: rgb(6, 50, 133) !important;
-}
+
 .nav-item i {
   margin-right: 5px;
 }
@@ -110,6 +106,37 @@ body {
 .dropdown,
 .ddbm {
   cursor: pointer;
+}
+@media only screen and (min-width:1610px) {
+  .nav-item > a {
+    font-size: large !important;
+    white-space: nowrap;
+    color: rgb(6, 50, 133) !important;
+  }
+}
+@media only screen and (max-width:1600px) {
+  .nav-item > a {
+    font-size: medium !important;
+    white-space: nowrap;
+    color: rgb(6, 50, 133) !important;
+  }
+}
+@media only screen and (max-width:1400px) {
+  .nav-item > a {
+    font-size: small !important;
+    white-space: nowrap;
+    color: rgb(6, 50, 133) !important;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .nav-item > a {
+    font-size: small !important;
+    white-space: nowrap;
+    color: rgb(6, 50, 133) !important;
+  }
+  .hide{
+    display: none;
+  }
 }
 @media only screen and (max-width: 990px) {
   #logo {
