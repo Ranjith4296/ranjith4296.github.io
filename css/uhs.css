@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Bree+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* uhs styels start */
+.banner{
+    background: url("../images/UHS\ page/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px grey;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+  }
