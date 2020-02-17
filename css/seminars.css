@@ -15,23 +15,41 @@ body {
   padding: 0;
 }
 /* seminar banner starts */
-.container{
+.banner-container{
   background: url("../images/Seminars/banner.jpg");
   background-size: cover;
   background-position: center;
   height: 350px;
   border-radius: 10px;
   box-shadow: 5px 5px 20px grey;
+  background-color: rgba(0,0,0,0.5);
 }
 .banner-content{
   text-align: center;
   align-items: center;
   height: max-content;
-  color: white !important;
+  color: rgb(19, 56, 4) !important;
   line-height: 5;
   padding-top: 100px;
+  text-shadow:
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white,
+  1px 1px 0 white;
 }
-.banner-content:hover .banner-content{
-  transform: scale(1.2);
+.course-topics{
+  height: 250px;
+  margin-top: 20px;
 }
+.course-items{
+  background-color: cornflowerblue;
+  height: 250px;
+}
+.course-items h4{
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  padding: 50px 10px 50px 10px;
+}
+
 /* seminar banner Ends */
