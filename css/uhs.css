@@ -75,7 +75,8 @@ body {
   
   .tech-slideshow > div {
     height: 200px;
-    background: url();
+    width: 700px;
+    background: url("../images/uhs/Picture1.png");
     position: absolute;
     top: 0;
     left: 0;
