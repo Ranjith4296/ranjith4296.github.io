@@ -15,5 +15,23 @@ body {
   padding: 0;
 }
 /* seminar banner starts */
-
+.container{
+  background: url("../images/Seminars/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px grey;
+}
+.banner-content{
+  text-align: center;
+  align-items: center;
+  height: max-content;
+  color: white !important;
+  line-height: 5;
+  padding-top: 100px;
+}
+.banner-content:hover .banner-content{
+  transform: scale(1.2);
+}
 /* seminar banner Ends */
