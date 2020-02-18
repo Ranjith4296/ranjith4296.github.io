@@ -119,6 +119,7 @@ body {
     font-size: medium !important;
     white-space: nowrap;
     color: rgb(6, 50, 133) !important;
+    display: block;
   }
 }
 @media only screen and (max-width:1400px) {

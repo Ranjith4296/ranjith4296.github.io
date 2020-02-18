@@ -14,6 +14,20 @@ body {
   margin: 0;
   padding: 0;
 }
+.changes{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+}
+.changes h1{
+  font-size: 7rem;
+  text-align: center;
+  align-items: center;
+  margin-top: 30vh;
+  z-index: 1;
+}
 /* seminar banner starts */
 .banner-container{
   background: url("../images/Seminars/banner.jpg");

@@ -22,15 +22,303 @@
      <!-- Fonts icon end -->
      <!-- Stylesheets -->
      <link rel="stylesheet" href="../css/home.css" />
+     <link rel="stylesheet" href="../css/nav.css">
   </head>
   <body>
    <!-- Nav Section Start -->
-   <section class="nav-container container-fluid"></section>
-   <script>
-     $(function() {
-       $(".nav-container").load("../html/nav.html");
-     });
-   </script>
+   <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"
+        ><img
+          id="logo"
+          class="img-responsive"
+          src="../images/logo.png"
+          alt="Logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class=" active nav-item">
+            <a class="nav-link" href="../index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i>HOME</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html"
+              ><i class="fa fa-handshake-o" aria-hidden="true"></i>ABOUT US</a
+            >
+          </li>
+          <li class="nav-item dropdown webdropdown">
+            <a class="nav-link"
+              ><i class="fa fa-cogs" aria-hidden="true"></i
+              >PRODUCTS/SERVICES<i
+                style="margin-left: 10px; font-size: large;"
+                class="fa fa-angle-down"
+              ></i
+            ></a>
+            <ul class="dropdownMenu">
+              <li class="nav-item ddbm webddbm">
+                <a class="nav-link" aria-hidden="true"
+                  >ddBM
+                  <i
+                    style="margin-left: 10px; border: 1px thin rgb(134, 54, 8);"
+                    class="fa fa-angle-right"
+                  ></i
+                ></a>
+                <ul class="ddbm-menu">
+                  <li class="nav-item">
+                    <a href="" class="nav-link" aria-hidden="true"
+                      >ddBM WIP</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" aria-hidden="true"
+                      >ddBM MIS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" aria-hidden="true"
+                      >ddBM Quality</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../html/uhs.html" class="nav-link" aria-hidden="true">UHS</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" aria-hidden="true">FAMS</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" aria-hidden="true">VAS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/testimonials.html"
+              ><i class="fa fa-user" aria-hidden="true"></i>TESTIMONIALS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/seminars.html"
+              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+              >SEMINARS/WORKSHOPS</a
+            >
+          </li>
+          <li class="nav-item hide">
+            <a class="nav-link disabled" href="../html/resources.html"
+              ><i class="fa fa-server" aria-hidden="true"></i>RESOURCES</a
+            >
+          </li>
+          <!-- <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>BLOG</a></li> -->
+          <li class="nav-item hide">
+            <a class="nav-link disabled" href="../html/technology.html"
+              ><i class="fa fa-desktop" aria-hidden="true"></i>TECHNOLOGY</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/contact.html"
+              ><i class="fa fa-phone" aria-hidden="true"></i>CONTACT US</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            class="btn btn-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#myModal"
+            type="button"
+          >
+            For free Demo
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- popup window -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Request a Demo</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form
+            class="myForm"
+            id="myForm"
+            method="post"
+            id="ContactEnquiryForm"
+          >
+            <div class="col-sm-12">
+              <div class="inputItems">
+                <input
+                  name="name"
+                  value=""
+                  type="text"
+                  class="form-control input-sm name"
+                  placeholder="Name *"
+                  required=""
+                />
+              </div>
+              <div class="inputItems">
+                <input
+                  name="mobile"
+                  value=""
+                  type="text"
+                  class="form-control input-sm company"
+                  placeholder="Company *"
+                  required=""
+                />
+              </div>
+              <div class="inputItems">
+                <input
+                  name="mobile"
+                  value=""
+                  type="text"
+                  class="form-control input-sm mobile_no"
+                  placeholder="Contact Number *"
+                  maxlength="10"
+                  required=""
+                />
+              </div>
+              <div class="inputItems">
+                <input
+                  name="email_id"
+                  value=""
+                  type="email"
+                  class="form-control input-sm"
+                  placeholder="Work Email"
+                />
+              </div>
+              <div class="inputItems">
+                <input
+                  name="mobile"
+                  value=""
+                  type="text"
+                  class="form-control input-sm jobtitle"
+                  placeholder="Job Title"
+                  required=""
+                />
+              </div>
+              <div class="inputItems">
+                <input
+                  name="message"
+                  value=""
+                  type="text"
+                  class="form-control input-sm message"
+                  placeholder="Message "
+                />
+              </div>
+              <input
+                class="btn btn-primary btn-block"
+                onclick="submit()"
+                type="submit"
+                value="Submit"
+                name="submit"
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup window closed -->
+  <script>
+    function clearInp() {
+      document.getElementsByTagName("input").value = "";
+    }
+    function submit() {
+      document.getElementById("myForm").reset();
+    }
+    // List hover effects remove starts
+    $(function() {
+      $(window).bind("resize", function() {
+        console.log($(this).width());
+        if ($(this).width() < 990) {
+          $(".dropdown")
+            .addClass("mobiledropdown")
+            .removeClass("webdropdown");
+        } else {
+          $(".dropdown")
+            .addClass("webdropdown")
+            .removeClass("mobiledropdown");
+        }
+      });
+    });
+    $(function() {
+      $(window).bind("resize", function() {
+        console.log($(this).width());
+        if ($(this).width() < 990) {
+          $(".ddbm")
+            .addClass("mobileddbm")
+            .removeClass("webddbm");
+        } else {
+          $(".ddbm")
+            .addClass("webddbm")
+            .removeClass("mobileddbm");
+        }
+      });
+    });
+
+    // List hover effects remove end
+
+    // nav list hover effects
+    $(function() {
+      $(".webdropdown").hover(function() {
+        $(".dropdownMenu").slideToggle();
+      });
+    });
+
+    $(function() {
+      $(".webddbm").hover(function() {
+        $(".ddbm-menu").slideToggle();
+      });
+    });
+    $(function() {
+      $(".navbar-toggler").click(function() {
+        $(".collapse").slideToggle(1000);
+      });
+    });
+
+    // nav list click effects
+
+    $(function() {
+      $(".mobiledropdown").click(function() {
+        $(".dropdownMenu").slideToggle();
+      });
+    });
+
+    $(function() {
+      $(".mobileddbm").click(function() {
+        $(".ddbm-menu").slideToggle();
+      });
+    });
+  </script>
    <!-- Nav section Ends -->
   
   <!-- Image Carousel starts -->
