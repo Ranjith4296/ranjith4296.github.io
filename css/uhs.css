@@ -17,7 +17,7 @@ body {
 /* uhs styels start */
 .banner{
     height: 350px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   .banner img{
       width: 100%;
@@ -43,7 +43,7 @@ body {
     padding-left: 5%;
   }
   .clientimg {
-    height: 130px;
+    height: 200px;
     width: 22%;
     box-shadow: 3px 3px 10px gray;
     cursor: pointer;
@@ -51,8 +51,12 @@ body {
     margin-bottom: 20px;
   }
   @media only screen and (max-width: 758px) {
+    .banner img{
+      height: 200px;
+    }
     .clientimg {
-      height: 80px;
+      height: 100px;
+      width: 24%;
     }
   }
   .clientimg:hover {
