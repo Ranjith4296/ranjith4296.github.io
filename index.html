@@ -25,6 +25,12 @@
      <link rel="stylesheet" href="../css/nav.css">
   </head>
   <body>
+    <!--CSS Spinner-->
+  <div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="spinner-border text-primary"></div>
+  </div>
+  </div>
    <!-- Nav Section Start -->
    <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light ">
@@ -436,7 +442,17 @@
        AOS.init({
          duration:2000,
        });
-      //  navbar animation
+
+       $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    
       
     </script>
   </body>
