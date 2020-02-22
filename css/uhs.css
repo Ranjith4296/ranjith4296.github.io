@@ -15,11 +15,12 @@ body {
   padding: 0;
 }
 /* uhs styels start */
-.banner{
+.main-image{
+  margin-top: 20px;
     height: 350px;
-    padding-bottom: 40px;
+    margin-bottom: 30px;
   }
-  .banner img{
+  .main-image img{
       width: 100%;
       height: 350px;
       border-radius: 10px;
@@ -44,14 +45,17 @@ body {
   }
   .clientimg {
     height: 200px;
-    width: 22%;
+    width: 20%;
     box-shadow: 3px 3px 10px gray;
     cursor: pointer;
     padding: 10px;
     margin-bottom: 20px;
   }
   @media only screen and (max-width: 758px) {
-    .banner img{
+    .main-image{
+      height: 200px;
+    }
+    .main-image img{
       height: 200px;
     }
     .clientimg {
@@ -62,9 +66,5 @@ body {
   .clientimg:hover {
     transform: scale(1.1);
     transition-duration: 1s;
-  }
-  .client-src-img {
-    margin-top: 75px;
-    margin-left: 50px;
   }
   

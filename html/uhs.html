@@ -21,406 +21,72 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- Fonts icon end -->
      <!-- Stylesheets -->
-     <link rel="stylesheet" href="../css/home.css" />
+     <link rel="stylesheet" href="../css/uhs.css" />
      <link rel="stylesheet" href="../css/nav.css">
   </head>
   <body>
    <!-- Nav Section Start -->
-   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="#"
-        ><img
-          id="logo"
-          class="img-responsive"
-          src="../images/logo.png"
-          alt="Logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class=" active nav-item">
-            <a class="nav-link" href="../index.html"
-              ><i class="fa fa-home" aria-hidden="true"></i>HOME</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/about.html"
-              ><i class="fa fa-handshake-o" aria-hidden="true"></i>ABOUT US</a
-            >
-          </li>
-          <li class="nav-item dropdown webdropdown">
-            <a class="nav-link"
-              ><i class="fa fa-cogs" aria-hidden="true"></i
-              >PRODUCTS/SERVICES<i
-                style="margin-left: 10px; font-size: large;"
-                class="fa fa-angle-down"
-              ></i
-            ></a>
-            <ul class="dropdownMenu">
-              <li class="nav-item ddbm webddbm">
-                <a class="nav-link" aria-hidden="true"
-                  >ddBM
-                  <i
-                    style="margin-left: 10px; border: 1px thin rgb(134, 54, 8);"
-                    class="fa fa-angle-right"
-                  ></i
-                ></a>
-                <ul class="ddbm-menu">
-                  <li class="nav-item">
-                    <a href="" class="nav-link" aria-hidden="true"
-                      >ddBM WIP</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link" aria-hidden="true"
-                      >ddBM MIS</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link" aria-hidden="true"
-                      >ddBM Quality</a
-                    >                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="../html/uhs.html" class="nav-link" aria-hidden="true">UHS</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link" aria-hidden="true">FAMS</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link" aria-hidden="true">VAS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/testimonials.html"
-              ><i class="fa fa-user" aria-hidden="true"></i>TESTIMONIALS</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/seminars.html"
-              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
-              >SEMINARS/WORKSHOPS</a
-            >
-          </li>
-          <li class="nav-item hide">
-            <a class="nav-link disabled" href="../html/resources.html"
-              ><i class="fa fa-server" aria-hidden="true"></i>RESOURCES</a
-            >
-          </li>
-          <!-- <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>BLOG</a></li> -->
-          <li class="nav-item hide">
-            <a class="nav-link disabled" href="../html/technology.html"
-              ><i class="fa fa-desktop" aria-hidden="true"></i>TECHNOLOGY</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/contact.html"
-              ><i class="fa fa-phone" aria-hidden="true"></i>CONTACT US</a
-            >
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button
-            class="btn btn-success my-2 my-sm-0"
-            data-toggle="modal"
-            data-target="#myModal"
-            type="button"
-          >
-            For free Demo
-          </button>
-        </form>
-      </div>
-    </nav>
-  </div>
-  <!-- popup window -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Request a Demo</h4>
-          <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <form
-            class="myForm"
-            id="myForm"
-            method="post"
-            id="ContactEnquiryForm"
-          >
-            <div class="col-sm-12">
-              <div class="inputItems">
-                <input
-                  name="name"
-                  value=""
-                  type="text"
-                  class="form-control input-sm name"
-                  placeholder="Name *"
-                  required=""
-                />
-              </div>
-              <div class="inputItems">
-                <input
-                  name="mobile"
-                  value=""
-                  type="text"
-                  class="form-control input-sm company"
-                  placeholder="Company *"
-                  required=""
-                />
-              </div>
-              <div class="inputItems">
-                <input
-                  name="mobile"
-                  value=""
-                  type="text"
-                  class="form-control input-sm mobile_no"
-                  placeholder="Contact Number *"
-                  maxlength="10"
-                  required=""
-                />
-              </div>
-              <div class="inputItems">
-                <input
-                  name="email_id"
-                  value=""
-                  type="email"
-                  class="form-control input-sm"
-                  placeholder="Work Email"
-                />
-              </div>
-              <div class="inputItems">
-                <input
-                  name="mobile"
-                  value=""
-                  type="text"
-                  class="form-control input-sm jobtitle"
-                  placeholder="Job Title"
-                  required=""
-                />
-              </div>
-              <div class="inputItems">
-                <input
-                  name="message"
-                  value=""
-                  type="text"
-                  class="form-control input-sm message"
-                  placeholder="Message "
-                />
-              </div>
-              <input
-                class="btn btn-primary btn-block"
-                onclick="submit()"
-                type="submit"
-                value="Submit"
-                name="submit"
-              />
-            </div>
-          </form>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- popup window closed -->
+   <section class="nav-container container-fluid">
+        
+   </section>
   <script>
-    function clearInp() {
-      document.getElementsByTagName("input").value = "";
-    }
-    function submit() {
-      document.getElementById("myForm").reset();
-    }
-    // List hover effects remove starts
-    $(function() {
-      $(window).bind("resize", function() {
-        console.log($(this).width());
-        if ($(this).width() < 990) {
-          $(".dropdown")
-            .addClass("mobiledropdown")
-            .removeClass("webdropdown");
-        } else {
-          $(".dropdown")
-            .addClass("webdropdown")
-            .removeClass("mobiledropdown");
-        }
-      });
-    });
-    $(function() {
-      $(window).bind("resize", function() {
-        console.log($(this).width());
-        if ($(this).width() < 990) {
-          $(".ddbm")
-            .addClass("mobileddbm")
-            .removeClass("webddbm");
-        } else {
-          $(".ddbm")
-            .addClass("webddbm")
-            .removeClass("mobileddbm");
-        }
-      });
-    });
-
-    // List hover effects remove end
-
-    // nav list hover effects
-    $(function() {
-      $(".webdropdown").hover(function() {
-        $(".dropdownMenu").slideToggle();
-      });
-    });
-
-    $(function() {
-      $(".webddbm").hover(function() {
-        $(".ddbm-menu").slideToggle();
-      });
-    });
-    $(function() {
-      $(".navbar-toggler").click(function() {
-        $(".collapse").slideToggle(1000);
-      });
-    });
-
-    // nav list click effects
-
-    $(function() {
-      $(".mobiledropdown").click(function() {
-        $(".dropdownMenu").slideToggle();
-      });
-    });
-
-    $(function() {
-      $(".mobileddbm").click(function() {
-        $(".ddbm-menu").slideToggle();
-      });
-    });
+    $(function(){
+      $(".nav-container").load("../html/nav.html");
+    });        
   </script>
    <!-- Nav section Ends -->
   
-  <!-- Image Carousel starts -->
-    <div class="container slide-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../images/Home/insanity-banner-Recovered.jpg" class="d-block w-100 " alt="banner">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/Home/PROVEN-SOLUTION-BANNER.jpg" class="d-block w-100 " alt="banner">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/Home/dramatic-baneer.jpg" class="d-block w-100 " alt="banner">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    </div><br>
-
-  
-      
-  <!-- Image Carousel Ends -->
-  
-  <!--Main Content Starts -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-lg-8 col-sm-12 sec-content" data-aos="fade-left">
-            <div class="main-content" data-aos="fade-up" >
-                <!-- <span><img class="img-responsive" src="../images/Home/welcome.png" alt=""></span> -->
-                <h2 style="text-align: center; color:  rgb(6, 50, 133)" >WELCOME TO IGAIT</h2><br>
-                <p style="text-align: justify;">
-                    <b style="color: brown;">“INDUSTRIAL GROWTH ANALYTIK INFO TECHNIQS" IGAIT</b>, is a consultancy
-                company founded with the aim ofimparting productivity improvement
-                skills and developing solutions for the apparel industry. IGAIT is
-                headed by Mr. Ravee Parthasaarathi. and is managed by a core team of
-                professionals from diverse fields like IT, engineering, statistics and
-                productivity concepts. IGAIT aims to impart training, and develop
-                solutions for the apparel industry in areas of production Improvement,
-                quality and wastage reduction. The main focus of our training and
-                solutions are based the concepts of the THEORY OF CONSTRAINTS,
-                developed by Mr. Eliyahu Goldratt. IGAIT advisory team consists of
-                experts with rich experience in implementation of lean, gemba, 5s,
-                kaizen, visual solutions etc, apart from Information technology.
-                </p>
-            </div>
-          </div>
-        <div class="col-md-4 col-lg-4 col-sm-12 img-responsive" data-aos="fade-right">
-            <img class="contentimg img-responsive" src="../images/Home/Untitled-1.jpg" alt="" />
-        </div>
-       
-      </div>
+   <div class="container main-image">
+    <img class="img-responsive" src="../images/uhs/banner.jpg" alt="">
     </div>
-    <!-- Main Content Ends -->
+    <!-- main content starts -->
+    <div class="container introduction">
+    <h3 style="text-align: center;">WHAT IS UHS</h3>
+    <P style="text-align: justify;">
+        UHS - UNIT HANDLING SOLUTIONS is a simple and easy customized conveyor system for the sewing finishing line as well as movement between inter departments.
+        It reduces Manpower, Handling time, Rework, WIP and Clear visibility of the Line.  Smooth flow of cut pieces and achievement of the planned output with ease.
+        Our existing customers are reporting production improvement of over 20% over bundle system.
+    </P>
+    </div>
+    <!-- main content Ends -->
     <div class="container client-container">
-      <h2 style="color:  rgb(6, 50, 133); text-align: center;">OUR SATISFIED CLIENTS</h2><br>
+    <h2 style="color:  rgb(6, 50, 133); text-align: center;">OUR SATISFIED CLIENTS</h2><br>
         <div class="clientlogo">
-          <div class="row client-imgs"  data-aos="fade-right">
-            <div class="clientimgs col-lg-6 col-md-6 col-sm-12">
-                <img src="../images/Home/CLIENT LOGOS/logo.jpg" alt="" class="clientimg">
-                <img src="../images/Home/CLIENT LOGOS/Picture1.png" alt="" class="clientimg">
-                <img src="../images/Home/CLIENT LOGOS/Picture2.jpg" alt="" class="clientimg">
-                <img src="../images/Home/CLIENT LOGOS/Picture3.png" alt="" class="clientimg"> 
+        <div class="row client-imgs"  data-aos="fade-right">
+            <div class="clientimgs col-lg-12 col-md-12 col-sm-12">
+                <img src="../images/Home/CLIENT LOGOS/logo.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture1.png" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture2.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture3.png" alt="" class="clientimg img-responsive">    
             </div>
-            <div class="clientimgs col-lg-6 col-md-6 col-sm-12">
-              <img src="../images/Home/CLIENT LOGOS/Picture4.jpg" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture5.png" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture6.png" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture7.jpg" alt="" class="clientimg">
+            <div class="clientimgs col-lg-12 col-md-12 col-sm-12">
+                <img src="../images/Home/CLIENT LOGOS/Picture4.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture5.png" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture6.png" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture7.jpg" alt="" class="clientimg img-responsive">
             </div>
-          </div>
-          <div class="row client-imgs"  data-aos="fade-left">
-            <div class="clientimgs col-lg-6 col-md-6 col-sm-12">
-              <img src="../images/Home/CLIENT LOGOS/Picture8.jpg" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture9.jpg" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture10.png" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture11.jpg" alt="" class="clientimg">
-            </div>
-            <div class="clientimgs col-lg-6 col-md-6 col-sm-12">
-              <img src="../images/Home/CLIENT LOGOS/Picture12.png" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture13.jpg" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture14.jpg" alt="" class="clientimg">
-              <img src="../images/Home/CLIENT LOGOS/Picture15.png" alt="" class="clientimg">
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="row client-imgs"  data-aos="fade-left">
+            <div class="clientimgs col-lg-12 col-md-12 col-sm-12">
+                <img src="../images/Home/CLIENT LOGOS/Picture8.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture9.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture10.png" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture11.jpg" alt="" class="clientimg img-responsive">
+            </div>
+            <div class="clientimgs col-lg-12 col-md-12 col-sm-12">
+                <img src="../images/Home/CLIENT LOGOS/Picture12.png" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture13.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture14.jpg" alt="" class="clientimg img-responsive">
+                <img src="../images/Home/CLIENT LOGOS/Picture15.png" alt="" class="clientimg img-responsive">
+            </div>
+        </div>
+        </div>
+    </div>
     </div><br><br>
     <!-- client images ends -->
+    <div class="container benefits-container">
+    
+    </div>
 <!-- Footer starts -->
 <section class="footer-container container-fluid">
         
