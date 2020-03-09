@@ -173,10 +173,28 @@ body {
   float: none;
   display: inline-block;
 }
+.btn-success{
+  animation: colorchange 2s infinite ease-in-out;
+}
+@keyframes colorchange{
+  0%{
+    color: white;
+    background-color: green;
+  }
+  50%{
+    color: white;
+    background-color: red;
+  }
+  100%{
+    color: white;
+    background-color: green;
+  }
+}
 .btn-success:hover {
   background: linear-gradient(to left, yellow, yellowgreen) !important;
   color: green !important;
   transition-duration: 0.3s;
   border: none;
   box-shadow: 3px 3px 20px grey !important;
+  animation: colorchange 0s infinite ease-in-out;
 }

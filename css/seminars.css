@@ -36,15 +36,44 @@ body {
 .banner-content{
   text-align: center;
   align-items: center;
-  height: max-content;
-  color: rgb(19, 56, 4) !important;
-  line-height: 5;
-  padding-top: 100px;
-  text-shadow:
-  -1px -1px 0 white,
-  1px -1px 0 white,
-  -1px 1px 0 white,
-  1px 1px 0 white;
+  vertical-align: middle;
+  padding: 30px 10px 30px 10px;
+}
+.banner-content .title{
+  animation: zoominout 3s ease-in-out infinite;
+}
+@keyframes zoominout{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.banner-content h1{
+  font-size: 62px;
+  background: -webkit-linear-gradient(red, yellow);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+.banner-content h1:hover{
+  font-size: 62px;
+  background: -webkit-linear-gradient(yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.banner-content h2{
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px red;
 }
 .cards-container{
   display: flex;
